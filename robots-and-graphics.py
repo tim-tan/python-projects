@@ -13,10 +13,6 @@ def main():
     """ Calls the   TEST   functions in this module. """
     test_go_and_show()
     
-#------------------------------------------------------------------------
-# Students: Use this handy   close_window   function if you wish.
-#           It is ALREADY DONE - no need to modify or add to it.
-#------------------------------------------------------------------------
 def close_window(window):
     """
     Displays a message at the bottom of the given window telling the user
@@ -38,10 +34,6 @@ def test_go_and_show():
     """ Tests the   go_and_show   function. """
     go_and_show(72, 12)
     go_and_show(-72, 6)
-    # TODO: 2a. Implement this function, using it to test the NEXT
-    #    function. Write the two functions in whichever order you prefer.
-    #    Include tests for BOTH directions,
-    #    with at least two distances and two speeds.
     
 def go_and_show(centimeters, centimeters_per_second):
     """
@@ -66,10 +58,7 @@ def go_and_show(centimeters, centimeters_per_second):
         
     3. Shuts down the robot.
        Waits for the user to click in the window, then closes the window.
-       
-    See the attached   go_and_show.pdf   for samples of the imaging.
-    
-    Preconditions: The arguments are numbers,
+   Preconditions: The arguments are numbers,
                    with the 2nd number being positive.
     """
     
@@ -106,9 +95,7 @@ def go_and_show(centimeters, centimeters_per_second):
     
     robot.shutdown()
     close_window(window)
-    # TODO: 2b. Implement and test this function.
-    # HINT: You may need to "stringify" a number; use   str  for that.
-    
+  
 #------------------------------------------------------------------------
 # If this module is running at the top level (as opposed to being
 # imported by another module), then call the 'main' function.
