@@ -14,42 +14,44 @@ def test_problem1():
 def problem1():
     """
     Prompts the user for and inputs:
-      -- A positive floating point number
+      -- A floating point number
+      -- Another floating point number
       -- A positive integer
       -- A string
-    in that order (via three separate inputs).
+    in that order (via four separate inputs).
     Then prints, in this order, all on separate lines:
-      -- The square root of the floating point number,
-         repeated the input integer number of times
-      -- The string, repeated the input integer number of times.
+      -- The cosine of the first floating point number
+      -- The sine of the second floating point number
+      -- The string, repeated the input integer number of times
+      -- The input integer, repeated the input integer number of times.
     No input validation is required.  Nothing else should be printed.
     
     Here is a sample run, where the user input is to the right
     of the colons:
-         Enter a positive floating point number: 1.44
-         Enter a positive integer: 4
-         Enter a string: Peace & Love.
-         1.2
-         1.2
-         1.2
-         1.2
-         Peace & Love.
-         Peace & Love.
-         Peace & Love.
-         Peace & Love.
+         Enter a positive floating point number: 2.5
+         Enter a positive floating point number: 1.3
+         Enter a positive integer: 3
+         Enter a string: March Madness!
+         -0.8011436155469337
+         0.963558185417193
+         March Madness!
+         March Madness!
+         March Madness!
+         3
+         3
+         3
     """
-    input1 = input('Name a positive number.')
-    input2 = input('Name an integer.')
-    input3 = input('Say something.')
-    
-    n = int(input2)
-    
-    for k in range(n):
-        print('The square root of your number is', math.sqrt(float(input1)))
-        
-    for k in range(n):
-        print(input3)
-        
+    input1 = input('Provide a number.')
+    input2 = input('Provide another number.')
+    input3 = input('Provide a positive integer.')
+    input4 = input('Say something witty.')
+    print()
+    print(math.cos(float(input1)))
+    print(math.sin(float(input2)))
+    for k in range(int(input3)):
+        print(input4)
+    for k in range(int(input3)):
+        print(int(input3))
     
 #------------------------------------------------------------------------
 # If this module is running at the top level (as opposed to being
